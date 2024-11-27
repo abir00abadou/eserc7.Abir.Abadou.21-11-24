@@ -5,14 +5,140 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap demo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaro:opsz@6..72&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=audio_file" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow" /> -->
         <link rel="stylesheet" href="./style.css">
     </head>
 
 
-    <body>
-        <h1>Hello, world!</h1>
+        <body>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid ">
+                <a class="navbar-brand text-a" href="#">TuneMusic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-a" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-a" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-a" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-a" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown text-a">
+                        <a class="nav-link dropdown-toggle text-a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Category</a></li>
+                        <li><a class="dropdown-item" href="#">Playlist</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Artist</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>    
         
+
+            <header class="container-fluid img px-0">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                    <div><h1 class="title-custom">Feel the Beat.</h1>
+                    <p class="p-custom">Let the rhythm guide your soul.
+                    Your journey through sound starts here.
+                    </p>
+                    </div>
+                </div>
+            </header>
+
+            <main class="container mt-5">
+                <h2>How it works</h2>
+                <div class="row justify-content-center">
+                <div class="col-12 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <!-- <span class="material-symbols-outlined">
+                        person
+                        </span> -->
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">
+                                <h3>Create an account</h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">
+                                <h3>Choose a plan</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <!-- <span class="material-symbols-outlined">
+                        audio_file
+                        </span> -->
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">
+                                <h3>Download Music</h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </main>
+
+
+
+
+
+
+            <div class="row row-cols-1 row-cols-md-3 g-3 background mt-5">
+                <div class="col">
+                    <div class="card h-20 justify-content-center">
+                    <img src="./img/2.jpg" class="card-img-top w-50" alt="live concerts">
+                    <div class="card-body">
+                        <h5 class="card-title text-a">Live Concerts</h5>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card h-20">
+                    <img src="./img/dj sets.jpg" class="card-img-top w-50" alt="Dj Sets">
+                    <div class="card-body">
+                        <h5 class="card-title text-a">Dj Sets</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-20">
+                    <img src="./img/live streems.jpg" class="card-img-top w-50" alt="Live Streems">
+                    <div class="card-body">
+                        <h5 class="card-title text-a">Live Streems</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
         
+
+            
         
         
         
